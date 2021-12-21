@@ -1,3 +1,13 @@
+# Idea Property Files
+.idea/
+*.iml
+
+# OpenSSL Generated Files
+*.crt
+*.key
+*.csr
+*.pem
+
 # Compiled class file
 *.class
 
