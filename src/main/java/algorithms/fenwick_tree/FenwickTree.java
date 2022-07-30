@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class FenwickTree {
 
-    private long[] tree;
+    private final long[] tree;
 
     public FenwickTree(int size) {
         tree = new long[size + 1];
@@ -57,9 +57,8 @@ public class FenwickTree {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("FenwickTree{");
-        sb.append("tree=").append(Arrays.toString(tree));
-        sb.append('}');
-        return sb.toString();
+        String sb = "FenwickTree{" + "tree=" + Arrays.toString(tree) +
+                '}';
+        return sb;
     }
 }

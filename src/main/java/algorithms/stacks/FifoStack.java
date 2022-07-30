@@ -9,7 +9,7 @@ import java.util.function.Consumer;
 
 public class FifoStack<T> implements Stack<T>, Iterable<T> {
 
-    private LinkedList<T> list = new LinkedList<>();
+    private final LinkedList<T> list = new LinkedList<>();
 
     public FifoStack() {
     }

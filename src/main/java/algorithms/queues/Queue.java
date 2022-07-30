@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 
 public class Queue<T> implements Iterable<T> {
 
-    private LinkedList<T> list = new LinkedList<>();
+    private final LinkedList<T> list = new LinkedList<>();
 
     public Queue() {
     }

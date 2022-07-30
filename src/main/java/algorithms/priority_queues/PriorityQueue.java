@@ -16,7 +16,7 @@ public class PriorityQueue<T extends Comparable<T>> {
 
     private int heapSize = 0;
 
-    private Map<T, TreeSet<Integer>> map = new HashMap<>();
+    private final Map<T, TreeSet<Integer>> map = new HashMap<>();
 
     public PriorityQueue() {
         this(1);

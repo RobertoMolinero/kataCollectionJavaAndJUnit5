@@ -27,11 +27,10 @@ class Entry<K, V> {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Entry{");
-        sb.append("key=").append(key);
-        sb.append(", value=").append(value);
-        sb.append('}');
-        return sb.toString();
+        String sb = "Entry{" + "key=" + key +
+                ", value=" + value +
+                '}';
+        return sb;
     }
 }
 
@@ -40,7 +39,7 @@ public class HashTableWithSeparateChaining<K, V> implements Iterable<K> {
     private static final int DEFAULT_CAPACITY = 3;
     private static final double DEFAULT_LOAD_FACTOR = 0.75;
 
-    private double maxLoadFactor;
+    private final double maxLoadFactor;
     private int capacity, treshold, size = 0;
     private LinkedList<Entry<K, V>>[] table;
 

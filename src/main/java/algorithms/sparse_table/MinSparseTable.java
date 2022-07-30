@@ -3,21 +3,21 @@ package algorithms.sparse_table;
 public class MinSparseTable {
 
     // The number of elements in the original input array.
-    private int n;
+    private final int n;
 
     // The maximum power of 2 needed. This value is floor(log2(n)).
-    private int P;
+    private final int P;
 
     // Fast log base 2 logarithm lookup table, 1 <= i <= n.
-    private int[] log2;
+    private final int[] log2;
 
     // The sparse table values.
-    private int[][] dp;
+    private final int[][] dp;
 
     // Index table associated with the values in the sparse table. This table is only useful when we want to query
     // the index of the min (or max) element in the range [l, r] rather than the value itself. The index tables
     // doesn't make sense for most other range query types like gcd or sum.
-    private int[][] it;
+    private final int[][] it;
 
     public MinSparseTable(int[] values) {
 

@@ -2,9 +2,9 @@ package gameOfLife.entity;
 
 public class Generation {
 
-    private World world;
+    private final World world;
 
-    private int time;
+    private final int time;
 
     public Generation(World world, int time) {
         this.world = world;

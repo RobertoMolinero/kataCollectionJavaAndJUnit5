@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class World {
 
-    private List<Cell> livingCells;
+    private final List<Cell> livingCells;
 
     public World(List<Cell> livingCells) {
         this.livingCells = livingCells;

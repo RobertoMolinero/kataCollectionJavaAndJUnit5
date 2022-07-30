@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class Cell {
 
-    private int x;
+    private final int x;
 
-    private int y;
+    private final int y;
 
     public Cell(int x, int y) {
         this.x = x;

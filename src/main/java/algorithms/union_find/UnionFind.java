@@ -3,13 +3,13 @@ package algorithms.union_find;
 public class UnionFind {
 
     // The number of elements in this union find
-    private int size;
+    private final int size;
 
     // Used to track the sizes of each of the components
-    private int[] sz;
+    private final int[] sz;
 
     // id[i] points to the parent of i, if id[i]=i then i is a root node
-    private int[] id;
+    private final int[] id;
 
     // Tracks the number of components in the union find
     private int numOfComponents;
