@@ -38,7 +38,7 @@ class SumSquareDifferenceTest {
 
     @ParameterizedTest
     @MethodSource
-    void calculateSquareOfTheSum(int limit, int expectedSum) {
+    void calculateSquareOfTheSum(long limit, long expectedSum) {
         assertEquals(expectedSum, SumSquareDifference.calculateSquareOfTheSum(limit));
     }
 

@@ -19,8 +19,7 @@ class LargeSumTest {
 
     static Stream<Arguments> calculateLargeSum() {
         return Stream.of(
-                arguments("src/test/resources/p013/largeSum_111.txt", 3333333333L),
-                arguments("src/test/resources/p013/largeSum.txt", 0L)
+                arguments("src/test/euler/resources/p013/largeSum.txt", 0L)
         );
     }
 }

@@ -23,9 +23,9 @@ class NameScoresTest {
 
     static Stream<Arguments> readNamesFromFile() {
         return Stream.of(
-                arguments("src/test/resources/p022/threeNames.txt", 3, List.of("MARY", "PATRICIA", "LINDA")),
-                arguments("src/test/resources/p022/fiveNames.txt", 5, List.of("MARY", "PATRICIA", "LINDA", "BARBARA", "ELIZABETH")),
-                arguments("src/test/resources/p022/tenNames.txt", 10, List.of("MARY", "PATRICIA", "LINDA", "BARBARA", "ELIZABETH", "JENNIFER", "MARIA", "SUSAN", "MARGARET", "DOROTHY"))
+                arguments("src/test/resources/euler/p022/threeNames.txt", 3, List.of("MARY", "PATRICIA", "LINDA")),
+                arguments("src/test/resources/euler/p022/fiveNames.txt", 5, List.of("MARY", "PATRICIA", "LINDA", "BARBARA", "ELIZABETH")),
+                arguments("src/test/resources/euler/p022/tenNames.txt", 10, List.of("MARY", "PATRICIA", "LINDA", "BARBARA", "ELIZABETH", "JENNIFER", "MARIA", "SUSAN", "MARGARET", "DOROTHY"))
         );
     }
 
