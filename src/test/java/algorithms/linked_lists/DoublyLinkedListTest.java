@@ -35,7 +35,7 @@ class DoublyLinkedListTest {
         DoublyLinkedList<Object> noValue = getNoValue();
 
         List<String> noValueResult = new ArrayList<>();
-        noValueResult.add("abc");
+        noValueResult.add("kattis/abc");
 
         DoublyLinkedList<String> oneString = getOneString();
 
@@ -54,7 +54,7 @@ class DoublyLinkedListTest {
 
         List<String> threeStringsResult = new ArrayList<>();
         threeStringsResult.add("ahoi");
-        threeStringsResult.add("abc");
+        threeStringsResult.add("kattis/abc");
         threeStringsResult.add("xyz");
         threeStringsResult.add("rhabarber");
 
@@ -76,7 +76,7 @@ class DoublyLinkedListTest {
         fourColorsResult.add(Color.WHITE);
 
         return Stream.of(
-                arguments(noValue, "abc", noValueResult),
+                arguments(noValue, "kattis/abc", noValueResult),
                 arguments(oneString, "2", oneStringResult),
                 arguments(twoIntegers, 3, twoIntegersResult),
                 arguments(threeStrings, "ahoi", threeStringsResult),
@@ -104,7 +104,7 @@ class DoublyLinkedListTest {
         DoublyLinkedList<Object> noValue = getNoValue();
 
         List<String> noValueResult = new ArrayList<>();
-        noValueResult.add("abc");
+        noValueResult.add("kattis/abc");
 
         DoublyLinkedList<String> oneString = getOneString();
 
@@ -122,7 +122,7 @@ class DoublyLinkedListTest {
         DoublyLinkedList<String> threeStrings = getThreeStrings();
 
         List<String> threeStringsResult = new ArrayList<>();
-        threeStringsResult.add("abc");
+        threeStringsResult.add("kattis/abc");
         threeStringsResult.add("xyz");
         threeStringsResult.add("rhabarber");
         threeStringsResult.add("ahoi");
@@ -145,7 +145,7 @@ class DoublyLinkedListTest {
         fourColorsResult.add(Color.MAGENTA);
 
         return Stream.of(
-                arguments(noValue, "abc", noValueResult),
+                arguments(noValue, "kattis/abc", noValueResult),
                 arguments(oneString, "2", oneStringResult),
                 arguments(twoIntegers, 3, twoIntegersResult),
                 arguments(threeStrings, "ahoi", threeStringsResult),
@@ -270,7 +270,7 @@ class DoublyLinkedListTest {
         return Stream.of(
                 arguments(getOneString(), "1"),
                 arguments(getTwoIntegers(), 1),
-                arguments(getThreeStrings(), "abc"),
+                arguments(getThreeStrings(), "kattis/abc"),
                 arguments(getThreePoints(), new Point(0, 0)),
                 arguments(getFourColors(), Color.YELLOW)
         );
@@ -330,7 +330,7 @@ class DoublyLinkedListTest {
                 arguments(getTwoIntegers(), 1, true),
                 arguments(getTwoIntegers(), 2, true),
                 arguments(getTwoIntegers(), 3, false),
-                arguments(getThreeStrings(), "abc", true),
+                arguments(getThreeStrings(), "kattis/abc", true),
                 arguments(getThreeStrings(), "xyz", true),
                 arguments(getThreeStrings(), "rhabarber", true),
                 arguments(getThreeStrings(), "tomate", false),
@@ -363,7 +363,7 @@ class DoublyLinkedListTest {
                 arguments(getOneString(), 0, "1"),
                 arguments(getTwoIntegers(), 0, 1),
                 arguments(getTwoIntegers(), 1, 2),
-                arguments(getThreeStrings(), 0, "abc"),
+                arguments(getThreeStrings(), 0, "kattis/abc"),
                 arguments(getThreeStrings(), 1, "xyz"),
                 arguments(getThreeStrings(), 2, "rhabarber"),
                 arguments(getThreePoints(), 0, new Point(0, 0)),
@@ -417,7 +417,7 @@ class DoublyLinkedListTest {
         return Stream.of(
                 arguments(getOneString(), "1"),
                 arguments(getTwoIntegers(), 1),
-                arguments(getThreeStrings(), "abc"),
+                arguments(getThreeStrings(), "kattis/abc"),
                 arguments(getThreePoints(), new Point(0, 0)),
                 arguments(getFourColors(), Color.YELLOW)
         );
@@ -477,7 +477,7 @@ class DoublyLinkedListTest {
 
     private static DoublyLinkedList<String> getThreeStrings() {
         DoublyLinkedList<String> threeStrings = new DoublyLinkedList<>();
-        List.of("abc", "xyz", "rhabarber").forEach(threeStrings::add);
+        List.of("kattis/abc", "xyz", "rhabarber").forEach(threeStrings::add);
         return threeStrings;
     }
 

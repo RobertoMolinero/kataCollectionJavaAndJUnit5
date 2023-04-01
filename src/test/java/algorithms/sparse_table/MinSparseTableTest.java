@@ -29,6 +29,7 @@ class MinSparseTableTest {
 
     @ParameterizedTest
     @MethodSource
+
     <T> void generateTable(List<Integer> values) {
         // arrange + act
 //        MinSparseTable sut = new MinSparseTable(values);

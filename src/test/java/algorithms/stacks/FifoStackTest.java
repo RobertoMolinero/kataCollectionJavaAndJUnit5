@@ -120,7 +120,7 @@ class FifoStackTest {
         List.of(1, 2, 3).forEach(twoIntegers::push);
 
         FifoStack<String> threeStrings = new FifoStack<>();
-        List.of("abc", "xyz", "rhabarber", "tomato").forEach(threeStrings::push);
+        List.of("kattis/abc", "xyz", "rhabarber", "tomato").forEach(threeStrings::push);
 
         FifoStack<Point> threePoints = new FifoStack<>();
         List.of(new Point(0, 0), new Point(1, 0), new Point(0, 1), new Point(1, 1)).forEach(threePoints::push);
@@ -179,7 +179,7 @@ class FifoStackTest {
 
     private static FifoStack<String> getThreeStrings() {
         FifoStack<String> threeStrings = new FifoStack<>();
-        List.of("abc", "xyz", "rhabarber").forEach(threeStrings::push);
+        List.of("kattis/abc", "xyz", "rhabarber").forEach(threeStrings::push);
         return threeStrings;
     }
 

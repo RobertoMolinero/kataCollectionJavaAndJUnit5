@@ -27,10 +27,10 @@ class DynamicArrayTest {
 
     static Stream<Arguments> add() {
         return Stream.of(
-                arguments(getNoValue(), "abc", new DynamicArray<>(new String[]{"abc"})),
+                arguments(getNoValue(), "kattis/abc", new DynamicArray<>(new String[]{"kattis/abc"})),
                 arguments(getOneString(), "2", new DynamicArray<>(new String[]{"1", "2"})),
                 arguments(getTwoIntegers(), 3, new DynamicArray<>(new Integer[]{1, 2, 3})),
-                arguments(getThreeStrings(), "ahoi", new DynamicArray<>(new String[]{"abc", "xyz", "rhabarber", "ahoi"})),
+                arguments(getThreeStrings(), "ahoi", new DynamicArray<>(new String[]{"kattis/abc", "xyz", "rhabarber", "ahoi"})),
                 arguments(getThreePoints(), new Point(1, 1),
                         new DynamicArray<>(new Point[]{
                                 new Point(0, 0),
@@ -61,7 +61,7 @@ class DynamicArrayTest {
                 arguments(getTwoIntegers(), 1, 0),
                 arguments(getTwoIntegers(), 2, 1),
                 arguments(getTwoIntegers(), 3, -1),
-                arguments(getThreeStrings(), "abc", 0),
+                arguments(getThreeStrings(), "kattis/abc", 0),
                 arguments(getThreeStrings(), "xyz", 1),
                 arguments(getThreeStrings(), "rhabarber", 2),
                 arguments(getThreeStrings(), "not_found", -1),
@@ -90,7 +90,7 @@ class DynamicArrayTest {
                 arguments(getTwoIntegers(), 1, true),
                 arguments(getTwoIntegers(), 2, true),
                 arguments(getTwoIntegers(), 3, false),
-                arguments(getThreeStrings(), "abc", true),
+                arguments(getThreeStrings(), "kattis/abc", true),
                 arguments(getThreeStrings(), "xyz", true),
                 arguments(getThreeStrings(), "rhabarber", true),
                 arguments(getThreeStrings(), "invalid", false),
@@ -140,9 +140,9 @@ class DynamicArrayTest {
                 arguments(getOneString(), "1", true, new DynamicArray<>()),
                 arguments(getTwoIntegers(), 1, true, new DynamicArray<>(new Integer[]{2})),
                 arguments(getTwoIntegers(), 2, true, new DynamicArray<>(new Integer[]{1})),
-                arguments(getThreeStrings(), "abc", true, new DynamicArray<>(new String[]{"xyz", "rhabarber"})),
-                arguments(getThreeStrings(), "xyz", true, new DynamicArray<>(new String[]{"abc", "rhabarber"})),
-                arguments(getThreeStrings(), "rhabarber", true, new DynamicArray<>(new String[]{"abc", "xyz"})),
+                arguments(getThreeStrings(), "kattis/abc", true, new DynamicArray<>(new String[]{"xyz", "rhabarber"})),
+                arguments(getThreeStrings(), "xyz", true, new DynamicArray<>(new String[]{"kattis/abc", "rhabarber"})),
+                arguments(getThreeStrings(), "rhabarber", true, new DynamicArray<>(new String[]{"kattis/abc", "xyz"})),
                 arguments(getThreePoints(), new Point(0, 0), true, new DynamicArray<>(new Point[]{new Point(1, 0), new Point(0, 1)})),
                 arguments(getThreePoints(), new Point(1, 0), true, new DynamicArray<>(new Point[]{new Point(0, 0), new Point(0, 1)})),
                 arguments(getThreePoints(), new Point(0, 1), true, new DynamicArray<>(new Point[]{new Point(0, 0), new Point(1, 0)})),
@@ -171,9 +171,9 @@ class DynamicArrayTest {
                 arguments(getOneString(), 0, "1", new DynamicArray<>()),
                 arguments(getTwoIntegers(), 0, 1, new DynamicArray<>(new Integer[]{2})),
                 arguments(getTwoIntegers(), 1, 2, new DynamicArray<>(new Integer[]{1})),
-                arguments(getThreeStrings(), 0, "abc", new DynamicArray<>(new String[]{"xyz", "rhabarber"})),
-                arguments(getThreeStrings(), 1, "xyz", new DynamicArray<>(new String[]{"abc", "rhabarber"})),
-                arguments(getThreeStrings(), 2, "rhabarber", new DynamicArray<>(new String[]{"abc", "xyz"})),
+                arguments(getThreeStrings(), 0, "kattis/abc", new DynamicArray<>(new String[]{"xyz", "rhabarber"})),
+                arguments(getThreeStrings(), 1, "xyz", new DynamicArray<>(new String[]{"kattis/abc", "rhabarber"})),
+                arguments(getThreeStrings(), 2, "rhabarber", new DynamicArray<>(new String[]{"kattis/abc", "xyz"})),
                 arguments(getThreePoints(), 0, new Point(0, 0), new DynamicArray<>(new Point[]{new Point(1, 0), new Point(0, 1)})),
                 arguments(getThreePoints(), 1, new Point(1, 0), new DynamicArray<>(new Point[]{new Point(0, 0), new Point(0, 1)})),
                 arguments(getThreePoints(), 2, new Point(0, 1), new DynamicArray<>(new Point[]{new Point(0, 0), new Point(1, 0)})),
@@ -216,7 +216,7 @@ class DynamicArrayTest {
     }
 
     private static DynamicArray<String> getThreeStrings() {
-        return new DynamicArray<>(new String[]{"abc", "xyz", "rhabarber"});
+        return new DynamicArray<>(new String[]{"kattis/abc", "xyz", "rhabarber"});
     }
 
     private static DynamicArray<Point> getThreePoints() {
